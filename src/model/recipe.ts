@@ -27,3 +27,4 @@ export class Recipe {
         this.cover_photo = cover_photo;
     }
 }
+

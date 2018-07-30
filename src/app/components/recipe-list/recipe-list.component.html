@@ -1,0 +1,12 @@
+<h1> These are our recipes</h1>
+<div *ngFor="let recipe of recipes" class="panel panel-default recipe">
+  <div class="panel-heading" >
+    <h3 class="panel-title">{{ recipe.title }}</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <img src="{{ recipe.cover_photo ? recipe.cover_photo : '/assets/emptybowl.jpg'}}" alt="recipe">
+    </div>
+    <p> {{ recipe.description }}</p>
+  </div>
+</div>
